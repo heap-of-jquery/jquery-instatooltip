@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
 
     $("[" + instatooltip_attribute + "]").append(
 
-        $(instatooltip_hover_element).mouseover(function() {
+        $(instatooltip_hover_element).mouseenter(function() {
             if($(this).children("." + instatooltip_selector_class).length == 0) {    // if tooltip doesn't (yet) exist.
                 $(this).append(                                 // create it.
                     "<" + instatooltip_tooltip_element_type + " class='" + instatooltip_selector_class + "' style='display:none;'>" + ($(this).parent().attr(instatooltip_attribute)) + "</" + instatooltip_tooltip_element_type + ">"
@@ -111,7 +111,7 @@ jQuery(document).ready(function($) {
             if(typeof($(this).data("instatooltip_timeoutref")) == "number") {   // if we have a delete timeout running
                 window.clearTimeout($(this).data("instatooltip_timeoutref"));   // clear it (because the mouse is back in the hover element)
             }
-        }).mouseout(function() {
+        }).mouseexit(function() {
             if($(this).children("." + instatooltip_selector_class).length != 0) {    // if there are tooltips out there.
                                                                                      // prepare to destroy them.
 
