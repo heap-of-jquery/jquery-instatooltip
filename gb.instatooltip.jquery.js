@@ -111,7 +111,7 @@ jQuery(document).ready(function($) {
             if(typeof($(this).data("instatooltip_timeoutref")) == "number") {   // if we have a delete timeout running
                 window.clearTimeout($(this).data("instatooltip_timeoutref"));   // clear it (because the mouse is back in the hover element)
             }
-        }).mouseexit(function() {
+        }).mouseleave(function() {
             if($(this).children("." + instatooltip_selector_class).length != 0) {    // if there are tooltips out there.
                                                                                      // prepare to destroy them.
 
