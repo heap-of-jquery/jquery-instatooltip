@@ -1,4 +1,5 @@
-** Instructions
+Instructions
+------------
 
 This is a very simple block of jQuery code. It adds tooltips. Call it instatooltip. I built it because there didn't appear to be any equivalent library that added the hover element automatically. Its not perfect, but its simple enough you can probably fix it if you need changes
 
@@ -18,13 +19,16 @@ Where the ``<span class='hoverable'>?</span>``, on hover, adds a ``instatooltip_
 
 Out of the box, this uses jQuery's hide/show methods with defaults set to 500ms all around. You may wish to change these.
 
-** Future
+Future
+------------
 
 This actually doesn't support tooltips that show upon themselves, though it would be trivially easy to change it to. It didn't appear to be trivially easy to change it to show tooltips that either add an element OR show on themselves on the same page, using the existing code, so I just left it as is. Would love to see a if(hover_element == "self") type option as well as a  "show tooltip in other location" option, I will likely never get around to this though and there are many other libraries meant for exactly those things.
 
 I don't really expect to invest much more in this. There's tons of great Javascript tooltip libraries.
 
-** License 
+License 
+------------
+
 You must retain this notice in ALL redistributions
 
 Copyright 2011 Giuseppe Burtini      https://github.com/gburtini
